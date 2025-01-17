@@ -124,6 +124,41 @@ video {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Product Slider */
+.product-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+
+.product-slide {
+  flex: 0 0 250px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-slide img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-slide p {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #2e8b57;
+}
+
+.product-slide:hover {
+  transform: scale(1.05);
+}
+
 /* Footer */
 footer {
   background: #2e8b57;
